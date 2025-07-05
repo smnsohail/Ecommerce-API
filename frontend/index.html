@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple E-commerce</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>🛍️ Welcome to Simple E-commerce</h1>
+
+    <p>This is basic UI, just for rendering, use postman for better results</p>
+    <p>
+      Search feature works but add to cart from frontend doesn't work, need to
+      update.
+    </p>
+    <p><strong>For category search:</strong> use full category name.</p>
+
+    <!-- 🔐 Login Form -->
+    <h2>Login</h2>
+    <p>
+      <strong>Note: </strong>Register using backend using Postman, just login
+      here...
+    </p>
+    <form id="loginForm">
+      <input type="email" id="loginEmail" placeholder="Email" required />
+      <input
+        type="password"
+        id="loginPassword"
+        placeholder="Password"
+        required
+      />
+      <button type="submit">Login</button>
+    </form>
+
+    <h3>Search:</h3>
+    <!-- Search Form -->
+    <form id="searchForm">
+      <input type="text" id="searchName" placeholder="Search by name" />
+      <input type="text" id="searchCategory" placeholder="Search by category" />
+      <button type="submit">Search</button>
+    </form>
+
+    <!-- Product List -->
+    <div id="productList"></div>
+
+    <!-- Add to Cart Form -->
+    <h3>Add to Cart</h3>
+    <form id="cartForm">
+      <input type="text" id="productId" placeholder="Product ID" required />
+      <input
+        type="number"
+        id="quantity"
+        placeholder="Quantity"
+        value="1"
+        min="1"
+        required
+      />
+      <button type="submit">Add to Cart</button>
+    </form>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
